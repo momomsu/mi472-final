@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <header>
+    <h1>Contact Me</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -19,23 +20,28 @@
   </header>
 
   <main>
-    <h1>Contact Me</h1>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" name="name" required />
+    <section>
+      <h2>Let's Connect</h2>
+      <p>Have a question, want to collaborate, or just want to say hi? 
+         Feel free to reach out! I’d love to hear from you.</p>
 
-      <label for="email">Email:</label>
-      <input type="email" name="email" required />
+      <form action="mailto:youremail@example.com" method="POST" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-      <label for="message">Message:</label>
-      <textarea name="message" required></textarea>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-      <button type="submit">Send</button>
-    </form>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <input type="submit" value="Send">
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Mohamed | LevelUp Website</p>
+    <p>&copy; 2025 Mohamed Ahmed</p>
   </footer>
 </body>
 </html>
